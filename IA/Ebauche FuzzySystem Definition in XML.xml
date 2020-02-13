@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<FuzzySystem>
+	<FuzzySystemInfo>
+		<Name>Gestion du zoom GPS</Name>
+		<Issue>1</Issue>
+		<Date day="03" month="02" year="2019" />
+	</FuzzySystemInfo>
+	<InputLinguisticVariableDefinitions>
+		<InputLinguisticVariable>
+			<Name>Variable Name</Name>
+			<LinguisticValueDefinitions>		
+				<LinguisticValue>
+					<Name>Value Name 1</Name>
+					<TrapezoidalFuzzySet>
+						<LeftZero>1</LeftZero>
+						<LeftOne>2</LeftOne>
+						<RightZero>1</RightZero>
+						<RightOne>2</RightOne>
+						<Min>0</Min>
+						<Max>5</Max>
+					</TrapezoidalFuzzySet>								
+				</LinguisticValue>
+				<LinguisticValue>
+					<Name>Value Name 2</Name>				
+					<RampFuzzySet>
+						<Zero>1</Zero>
+						<One>2</One>
+						<Min>0</Min>
+						<Max>5</Max>					
+					</RampFuzzySet>					
+				</LinguisticValue>
+				<LinguisticValue>
+					<Name>Value Name 3</Name>				
+					<TriangularFuzzySet>
+						<Left>2</Left>
+						<Center>3</Center>
+						<Right>4</Right>
+						<Min>0</Min>
+						<Max>5</Max>					
+					</TriangularFuzzySet>				
+				</LinguisticValue>				
+			</LinguisticValueDefinitions>
+		</InputLinguisticVariable>
+		<InputLinguisticVariable>
+			<Name>Variable Name 2</Name>
+			<LinguisticValueDefinitions>		
+				<LinguisticValue>
+					<Name>Value Name 1</Name>
+					<TrapezoidalFuzzySet>
+						<LeftZero>1</LeftZero>
+						<LeftOne>2</LeftOne>
+						<RightZero>1</RightZero>
+						<RightOne>2</RightOne>
+						<Min>0</Min>
+						<Max>5</Max>
+					</TrapezoidalFuzzySet>								
+				</LinguisticValue>
+				<LinguisticValue>
+					<Name>Value Name 2</Name>				
+					<RampFuzzySet>
+						<Zero>1</Zero>
+						<One>2</One>
+						<Min>0</Min>
+						<Max>5</Max>					
+					</RampFuzzySet>					
+				</LinguisticValue>
+				<LinguisticValue>
+					<Name>Value Name 3</Name>				
+					<TriangularFuzzySet>
+						<Left>2</Left>
+						<Center>3</Center>
+						<Right>4</Right>
+						<Min>0</Min>
+						<Max>5</Max>					
+					</TriangularFuzzySet>				
+				</LinguisticValue>				
+			</LinguisticValueDefinitions>
+		</InputLinguisticVariable>				
+	</InputLinguisticVariableDefinitions>
+	<OutputLinguisticVariableDefinition>
+		<OutputLinguisticVariable>
+			<Name>Variable Name</Name>
+			<LinguisticValueDefinitions>		
+				<LinguisticValue>
+					<Name>Value Name 1</Name>
+					<TrapezoidalFuzzySet>
+						<LeftZero>1</LeftZero>
+						<LeftOne>2</LeftOne>
+						<RightZero>1</RightZero>
+						<RightOne>2</RightOne>
+						<Min>0</Min>
+						<Max>5</Max>
+					</TrapezoidalFuzzySet>								
+				</LinguisticValue>
+				<LinguisticValue>
+					<Name>Value Name 2</Name>				
+					<RampFuzzySet>
+						<Zero>1</Zero>
+						<One>2</One>
+						<Min>0</Min>
+						<Max>5</Max>					
+					</RampFuzzySet>					
+				</LinguisticValue>
+				<LinguisticValue>
+					<Name>Value Name 3</Name>				
+					<TriangularFuzzySet>
+						<Left>2</Left>
+						<Center>3</Center>
+						<Right>4</Right>
+						<Min>0</Min>
+						<Max>5</Max>					
+					</TriangularFuzzySet>				
+				</LinguisticValue>				
+			</LinguisticValueDefinitions>
+		</OutputLinguisticVariable>	
+	</OutputLinguisticVariableDefinition>
+	<FuzzyRuleDefinitions>
+		<FuzzyRule>
+			<Premises>
+				<FuzzyExpression>
+					<LinguisticVariableName>Variable Name 1</LinguisticVariableName>
+					<LinguisticValueName>Value Name 1</LinguisticValueName>				
+				</FuzzyExpression>
+				<FuzzyExpression>
+					<LinguisticVariableName>Variable Name 2</LinguisticVariableName>
+					<LinguisticValueName>Value Name 3</LinguisticValueName>				
+				</FuzzyExpression>				
+			</Premises>
+			<Conclusion>
+				<FuzzyExpression>
+					<LinguisticVariableName>Variable Name 3</LinguisticVariableName>
+					<LinguisticValueName>Value Name 1</LinguisticValueName>				
+				</FuzzyExpression>			
+			</Conclusion>
+		</FuzzyRule>
+		<FuzzyRule>
+			<Premises>
+				<FuzzyExpression>
+					<LinguisticVariableName>Variable Name 1</LinguisticVariableName>
+					<LinguisticValueName>Value Name 2</LinguisticValueName>				
+				</FuzzyExpression>
+				<FuzzyExpression>
+					<LinguisticVariableName>Variable Name 2</LinguisticVariableName>
+					<LinguisticValueName>Value Name 2</LinguisticValueName>				
+				</FuzzyExpression>				
+			</Premises>
+			<Conclusion>
+				<FuzzyExpression>
+					<LinguisticVariableName>Variable Name 3</LinguisticVariableName>
+					<LinguisticValueName>Value Name 2</LinguisticValueName>				
+				</FuzzyExpression>			
+			</Conclusion>
+		</FuzzyRule>		
+	</FuzzyRuleDefinitions>
+</FuzzySystem>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D4759DE-1969-463D-A605-F21AE0BB93CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IA</RootNamespace>
+    <AssemblyName>IA</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExpertSystem\Engine\BoolFact.cs" />
+    <Compile Include="ExpertSystem\Engine\Engine.cs" />
+    <Compile Include="ExpertSystem\Engine\FactsBase.cs" />
+    <Compile Include="ExpertSystem\Engine\IntFact.cs" />
+    <Compile Include="ExpertSystem\Engine\Rule.cs" />
+    <Compile Include="ExpertSystem\Engine\RulesBase.cs" />
+    <Compile Include="ExpertSystem\Interfaces\IFact.cs" />
+    <Compile Include="ExpertSystem\Interfaces\IRulesBaseParserRepository.cs" />
+    <Compile Include="ExpertSystem\Interfaces\IUserInterface.cs" />
+    <Compile Include="ExpertSystem\Repositories\XmlRulesBaseParser.cs" />
+    <Compile Include="ExpertSystem\Repositories\XmlRulesBaseParserErrorCode.cs" />
+    <Compile Include="FuzzyLogic\Engine\FuzzyExpression.cs" />
+    <Compile Include="FuzzyLogic\Engine\FuzzyRule.cs" />
+    <Compile Include="FuzzyLogic\Engine\FuzzySet.cs" />
+    <Compile Include="FuzzyLogic\Engine\FuzzySystem.cs" />
+    <Compile Include="FuzzyLogic\Engine\FuzzyValue.cs" />
+    <Compile Include="FuzzyLogic\Engine\LinguisticValue.cs" />
+    <Compile Include="FuzzyLogic\Engine\LinguisticVariable.cs" />
+    <Compile Include="FuzzyLogic\Engine\Point2D.cs" />
+    <Compile Include="FuzzyLogic\Engine\RampFuzzySet.cs" />
+    <Compile Include="FuzzyLogic\Engine\TrapezoidalFuzzySet.cs" />
+    <Compile Include="FuzzyLogic\Engine\TriangularFuzzySet.cs" />
+    <Compile Include="FuzzyLogic\Interfaces\IFuzzySystemParserRepository.cs" />
+    <Compile Include="FuzzyLogic\Repositories\XmlFuzzySystemParser.cs" />
+    <Compile Include="FuzzyLogic\Repositories\XmlFuzzySystemParserErrorCode.cs" />
+    <Compile Include="GeneticAlgorithm\Engine\EvolutionaryProcess.cs" />
+    <Compile Include="GeneticAlgorithm\Engine\Individual.cs" />
+    <Compile Include="GeneticAlgorithm\Engine\IndividualFactory.cs" />
+    <Compile Include="GeneticAlgorithm\Engine\Parameters.cs" />
+    <Compile Include="GeneticAlgorithm\ExempleTSP\City.cs" />
+    <Compile Include="GeneticAlgorithm\ExempleTSP\TSP.cs" />
+    <Compile Include="GeneticAlgorithm\ExempleTSP\TSPGene.cs" />
+    <Compile Include="GeneticAlgorithm\ExempleTSP\TSPIndividual.cs" />
+    <Compile Include="GeneticAlgorithm\Interfaces\IGene.cs" />
+    <Compile Include="GeneticAlgorithm\Interfaces\IUserInterface.cs" />
+    <Compile Include="Metaheuristic\Algorithms\Algorithm.cs" />
+    <Compile Include="Metaheuristic\Algorithms\GradientDescentAlgorithm.cs" />
+    <Compile Include="Metaheuristic\Algorithms\GreedyAlgorithm.cs" />
+    <Compile Include="Metaheuristic\Algorithms\ParticleSwarmOptimizationAlgorithm.cs" />
+    <Compile Include="Metaheuristic\ExempleKnapSack\ParticleSwarmOptimizationAlgorithmForKnapSack.cs" />
+    <Compile Include="Metaheuristic\Algorithms\SimulatedAnnealingAlgorithm.cs" />
+    <Compile Include="Metaheuristic\Algorithms\TabuSearchAlgorithm.cs" />
+    <Compile Include="Metaheuristic\ExempleKnapSack\Box.cs" />
+    <Compile Include="Metaheuristic\ExempleKnapSack\GradientDescentAlgorithmForKnapSack.cs" />
+    <Compile Include="Metaheuristic\ExempleKnapSack\GreedyAlgorithmForKnapSack.cs" />
+    <Compile Include="Metaheuristic\ExempleKnapSack\KnapSackProblem.cs" />
+    <Compile Include="Metaheuristic\ExempleKnapSack\KnapSackSolution.cs" />
+    <Compile Include="Metaheuristic\ExempleKnapSack\SimulatedAnnealingAlgorithmForKnapSack.cs" />
+    <Compile Include="Metaheuristic\ExempleKnapSack\TabuSearchAlgorithmForKnapSack.cs" />
+    <Compile Include="Metaheuristic\Interfaces\IProblem.cs" />
+    <Compile Include="Metaheuristic\Interfaces\ISolution.cs" />
+    <Compile Include="Metaheuristic\Interfaces\IUserInterface.cs" />
+    <Compile Include="NeuralNetwork\Engine\DataCollection.cs" />
+    <Compile Include="NeuralNetwork\Engine\DataPoint.cs" />
+    <Compile Include="NeuralNetwork\Engine\NeuralNetwork.cs" />
+    <Compile Include="NeuralNetwork\Engine\NeuralSystem.cs" />
+    <Compile Include="NeuralNetwork\Engine\Neuron.cs" />
+    <Compile Include="NeuralNetwork\Interfaces\IExempleDataParserRepository.cs" />
+    <Compile Include="NeuralNetwork\Interfaces\IUserInterface.cs" />
+    <Compile Include="NeuralNetwork\Repositories\TextExempleDataParser.cs" />
+    <Compile Include="PathFinding\Engine\Algorithm.cs" />
+    <Compile Include="PathFinding\Engine\Arc.cs" />
+    <Compile Include="PathFinding\Engine\AStar.cs" />
+    <Compile Include="PathFinding\Engine\BellmanFord.cs" />
+    <Compile Include="PathFinding\Engine\BreadthFirst.cs" />
+    <Compile Include="PathFinding\Engine\DepthFirst.cs" />
+    <Compile Include="PathFinding\Engine\Dijkstra.cs" />
+    <Compile Include="PathFinding\Engine\Node.cs" />
+    <Compile Include="PathFinding\ExempleMap\Map.cs" />
+    <Compile Include="PathFinding\ExempleMap\Tile.cs" />
+    <Compile Include="PathFinding\ExempleMap\TileType.cs" />
+    <Compile Include="PathFinding\ExempleMap\TileTypeConverter.cs" />
+    <Compile Include="PathFinding\Interfaces\IGraph.cs" />
+    <Compile Include="PathFinding\Interfaces\IUserInterface.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

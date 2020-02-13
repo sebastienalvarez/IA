@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IA", "IA\IA.csproj", "{7D4759DE-1969-463D-A605-F21AE0BB93CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTestApp", "ConsoleTestApp\ConsoleTestApp.csproj", "{25E91EB8-1523-452F-BB27-B2F4EBB1ADA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuzzyLogicTestApp", "FuzzyLogicTestApp\FuzzyLogicTestApp.csproj", "{24658F5D-C4EA-4D34-9A6E-B05674665B8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneticAlgorithmTestApp", "GeneticAlgorithmTestApp\GeneticAlgorithmTestApp.csproj", "{CDD77C96-2105-46A1-8F66-EDB1A683C55F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeuralNetworkTestApp", "NeuralNetworkTestApp\NeuralNetworkTestApp.csproj", "{430885E3-8E2B-47BA-902B-ED323E71671E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PathFindingTestApp", "PathFindingTestApp\PathFindingTestApp.csproj", "{0406D280-D361-4CB8-A1F8-04E1844DDF08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetaheuristicTestApp", "MetaheuristicTestApp\MetaheuristicTestApp.csproj", "{421DA545-2530-40B1-8634-7F1629042A39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D4759DE-1969-463D-A605-F21AE0BB93CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D4759DE-1969-463D-A605-F21AE0BB93CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D4759DE-1969-463D-A605-F21AE0BB93CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D4759DE-1969-463D-A605-F21AE0BB93CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25E91EB8-1523-452F-BB27-B2F4EBB1ADA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25E91EB8-1523-452F-BB27-B2F4EBB1ADA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25E91EB8-1523-452F-BB27-B2F4EBB1ADA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25E91EB8-1523-452F-BB27-B2F4EBB1ADA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24658F5D-C4EA-4D34-9A6E-B05674665B8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24658F5D-C4EA-4D34-9A6E-B05674665B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24658F5D-C4EA-4D34-9A6E-B05674665B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24658F5D-C4EA-4D34-9A6E-B05674665B8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDD77C96-2105-46A1-8F66-EDB1A683C55F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDD77C96-2105-46A1-8F66-EDB1A683C55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDD77C96-2105-46A1-8F66-EDB1A683C55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDD77C96-2105-46A1-8F66-EDB1A683C55F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{430885E3-8E2B-47BA-902B-ED323E71671E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{430885E3-8E2B-47BA-902B-ED323E71671E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{430885E3-8E2B-47BA-902B-ED323E71671E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{430885E3-8E2B-47BA-902B-ED323E71671E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0406D280-D361-4CB8-A1F8-04E1844DDF08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0406D280-D361-4CB8-A1F8-04E1844DDF08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0406D280-D361-4CB8-A1F8-04E1844DDF08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0406D280-D361-4CB8-A1F8-04E1844DDF08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{421DA545-2530-40B1-8634-7F1629042A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{421DA545-2530-40B1-8634-7F1629042A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{421DA545-2530-40B1-8634-7F1629042A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{421DA545-2530-40B1-8634-7F1629042A39}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3D402F0-CB1C-4063-9D34-6189D20F13AD}
+	EndGlobalSection
+EndGlobal
